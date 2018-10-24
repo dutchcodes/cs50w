@@ -1,6 +1,0 @@
-#! /usr/bin/env bash
-
-cd /home/jordy/cs50w/project0 
-sass --watch .:. & FLASK_APP=roeien FLASK_DEBUG=1 flask run 
-
-$SHELL
