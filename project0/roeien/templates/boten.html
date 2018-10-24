@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Vloot
+{% endblock %}
+
+
+{% block header %}
+De Vloot
+{% endblock %}
+
+
+
+{% block content %}
+
+   <p> De boten die te vinden zijn op de KSRV </p>
+
+  <ul class="list-group" id="actieveboten">
+    <li class="list-group-item active">Actieve boten</li>
+    {% for namen in bootnamen %}
+      <!-- <li class="list-group-item active">Actieve boten</li> -->
+      <li class="list-group-item"> {{ namen }} </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

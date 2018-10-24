@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Leden
+{% endblock %}
+
+
+{% block header %}
+Ledenlijst
+{% endblock %}
+
+
+
+{% block content %}
+
+<p> De actieve leden zijn hier onder te vinden:</p>
+
+<ol>
+  {% for ledenlijst in leden %}
+  <li> {{ledenlijst}}</li>
+  {% endfor %}
+</ol>
+
+{% endblock %}

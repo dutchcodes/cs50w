@@ -1,0 +1,41 @@
+/*
+Error: Inconsistent indentation: 7 spaces were used for indentation, but the rest of the document was indented using 3 spaces.
+        on line 9 of ./styles.sass
+
+4: $screen-xl-min: 1200px; // Large tablets and desktops
+5: 
+6: // Small devices
+7: @mixin sm {
+8:    @media (min-width: #{$screen-sm-min}) {
+9:        @content;
+10:    }
+11: }
+12: 
+13: // Medium devices
+14: @mixin md {
+
+Backtrace:
+./styles.sass:9
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:494:in `block in tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each_with_index'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:417:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:356:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 7 spaces were used for indentation, but the rest of the document was indented using 3 spaces.\A         on line 9 of ./styles.sass\A \A 4: $screen-xl-min: 1200px; // Large tablets and desktops\A 5: \A 6: // Small devices\A 7: @mixin sm {\A 8:    @media (min-width: #{$screen-sm-min}) {\A 9:        @content;\A 10:    }\A 11: }\A 12: \A 13: // Medium devices\A 14: @mixin md {"; }

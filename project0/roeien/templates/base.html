@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+<html>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+<head>
+  <title>{% block title %}{% endblock %} - K.S.R.V.</title>
+</head>
+
+<nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">K.S.R.V. Njord</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="boten.html">Boten</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leden.html">Leden</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sponsors.html">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        De roeivereniging
+      </span>
+    </div>
+  </nav>
+</nav>
+
+<body>
+  <div class="maincontainer">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Deze website is ter lering gemaakt, niet de officiele website! </strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="welkom">
+      <h1> {% block header %}
+
+
+
+        {% endblock %} </h1>
+    </div>
+    {% block content %}
+
+
+
+
+    {% endblock %}
+
+</div>
+</body>
+
+<!-- Footer -->
+  <div class="footer-mycopyright "> © 2018 Copyright: J.C. Kuijt Designs</a></div>
+</html>
+
+
+ <!–– and the comment closes with # 4 html pages, 1 ordered/unordered list, 1 stylesheet with 5 CSS props 1 id 1 .class
+# 1 @media query
+# bootstrap with 1 column
+# one SCSS variable with 1 nesting and inheritance ––>

@@ -1,0 +1,115 @@
+$screen-sm-min: 50px; // Phones
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// STILL NEED TO CHECK https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints FOR ABOVE
+
+$primary-color: #333;
+
+html {
+  // Code so that footer stays on bottom
+  height: 100%;
+  box-sizing: border-box;
+  // End
+}
+
+// Code so that footer stays on bottom
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+//end
+
+body {
+  //// Code so that footer stays on bottom
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  //end
+}
+
+%standaardtext {
+  color: $primary-color;
+}
+
+.maincontainer {
+  margin: 0 auto;
+  padding-top: 64px;
+
+  @include sm {
+    max-width: 95%;
+  }
+  @include md {
+    max-width: 90%;
+  }
+  @include lg {
+    max-width: 70%;
+  }
+}
+
+h1 {
+  color: $primary-color;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px, 10px, 10px, 20px;
+}
+
+h4 {
+  padding: 5px;
+}
+
+.alert {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#actieveboten {
+  max-width: 600px;
+}
+
+.rowsponsors {
+
+  }
+
+.footer-mycopyright {
+  position: absolute;
+  right:0;
+  bottom: 0;
+  left:0;
+  padding:1rem;
+  background-color: #212529;
+  text-align: center;
+  color: white;
+}

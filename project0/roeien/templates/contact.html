@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+
+{% block header %}
+Contactpagina
+{% endblock %}
+
+
+
+{% block content %}
+
+<p> Neem vrijblijvend contact met ons op via het volgende formulier: </p>
+&nbsp;
+
+
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Uw email adres</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="naam@voorbeeld.nl">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Uw vraag</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Verstuur</button>
+</form>
+
+{% endblock %}
